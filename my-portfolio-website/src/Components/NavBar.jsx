@@ -8,8 +8,8 @@ export const NavBar = () => {
     <Navbar expand="lg" className="bg-body-tertiary">
       <Container>
         <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
-            <img src={changeThis.png} alt="Logo"/>
-        <Navbar.Toggle aria-controls="basic-navbar-nav>">
+            <img src={""} alt="Logo"/>
+        <Navbar.Toggle aria-controls="basic-navbar-nav">
             <span className="navbar-toggler-icon"></span>
         </Navbar.Toggle>
         <Navbar.Collapse id="basic-navbar-nav">
@@ -33,5 +33,3 @@ export const NavBar = () => {
     </Navbar>
   );
 }
-
-export default BasicExample;
