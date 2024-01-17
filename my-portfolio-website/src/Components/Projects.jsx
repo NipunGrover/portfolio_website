@@ -9,21 +9,30 @@ import projImg3 from "../assets/images/project-img3.png";
 export const Projects = () => {
 
     const  projects = [
-        {
-            title: "Business Startup",
-            description: "This is a business startup website",
-            imgUrl: projImg1,
-        },
-        {
-            title: "Business Startup",
-            description: "This is a business startup website",
-            imgUrl: projImg2,
-        },
-        {
-            title: "Business Startup",
-            description: "This is a business startup website",
-            imgUrl: projImg3,
-        }
+        [
+            {
+                title: "Business Startup",
+                description: "This is a business startup website",
+                imgUrl: projImg1,
+            },
+            {
+                title: "Business Startup",
+                description: "This is a business startup website",
+                imgUrl: projImg2,
+            },
+            {
+                title: "Business Startup",
+                description: "This is a business startup website",
+                imgUrl: projImg3,
+            },
+        ],
+        [
+                {
+                title: "Project 4",
+                description: "This is project 4",
+                imgUrl: projImg1,
+                },
+        ],
     ];
 
     return (
@@ -32,35 +41,41 @@ export const Projects = () => {
                 <Row>
                     <Col>
                         <Tab.Container defaultActiveKey="first">
-                        <Nav variant="pills">
-                            <Nav.Item>
-                            <Nav.Link eventKey="first">Tab 1</Nav.Link>
-                            </Nav.Item>
-                            <Nav.Item>
-                            <Nav.Link eventKey="second">Tab 2</Nav.Link>
-                            </Nav.Item>
-                        </Nav>
-                        <Tab.Content>
-                            <Tab.Pane eventKey="first">
-                                <Row>
-                                {
+                            <Nav variant="pills">
+                                <Nav.Item id="projects-tabs-tab-first">
+                                <Nav.Link eventKey="first" >Tab 1</Nav.Link>
+                                </Nav.Item>
+                                <Nav.Item id="projects-tabs-tab-second">
+                                <Nav.Link eventKey="second" >Tab 2</Nav.Link>
+                                </Nav.Item>
+              
+                            </Nav>
+                            <Tab.Content>
+                                <Tab.Pane eventKey="first">
+                                    <Row>
+                                    {
 
-                                    projects.map((project, index) => {
-                                        return(
-                                            <ProjectCard
-                                                key={index}
-                                                {...project}
-                                                />
-                                        )
-                                        })
-                                
-                                } 
-                                </Row>
-                            </Tab.Pane>
-                            <Tab.Pane eventKey="second">
-                            Content for Tab 2
-                            </Tab.Pane>
-                        </Tab.Content>
+                                        projects[0].map((project, index) => {
+                                            return(
+                                                <ProjectCard
+                                                    key={index}
+                                                    {...project}
+                                                    />
+                                            )
+                                            })
+                                    
+                                    } 
+                                    </Row>
+                                </Tab.Pane>
+                                <Tab.Pane eventKey="second">
+                                    <Row>
+                                        {projects[1].map((project, index) => (
+                                            <ProjectCard key={index} {...project} />
+                                        ))}
+                                    </Row>
+                                </Tab.Pane>
+                
+                            </Tab.Content>
                         </Tab.Container>
                     </Col>
                 </Row>
