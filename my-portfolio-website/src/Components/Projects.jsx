@@ -14,11 +14,13 @@ export const Projects = () => {
                 title: "Business Startup",
                 description: "This is a business startup website",
                 imgUrl: projImg1,
+                
             },
             {
                 title: "Business Startup",
                 description: "This is a business startup website",
                 imgUrl: projImg2,
+                link: "https://www.google.com",
             },
             {
                 title: "Business Startup",
@@ -55,14 +57,14 @@ export const Projects = () => {
                                     <Row>
                                     {
 
-                                        projects[0].map((project, index) => {
-                                            return(
+                                        projects[0].map((project, index) => (
                                                 <ProjectCard
                                                     key={index}
                                                     {...project}
+                                                    onClick={() => console.log('Project clicked!')}
                                                     />
                                             )
-                                            })
+                                            )
                                     
                                     } 
                                     </Row>
@@ -70,17 +72,19 @@ export const Projects = () => {
                                 <Tab.Pane eventKey="second">
                                     <Row>
                                         {projects[1].map((project, index) => (
-                                            <ProjectCard key={index} {...project} />
+                                            <ProjectCard key={index} {...project} 
+                                            onClick={() => console.log('Project clicked!')}
+                                            />
                                         ))}
                                     </Row>
+
                                 </Tab.Pane>
-                
                             </Tab.Content>
                         </Tab.Container>
                     </Col>
                 </Row>
             </Container>
-            <img classname="background-image-right" src={ColorSharp2}></img>
+            <img classame="background-image-right" src={ColorSharp2}></img>
         </section>
       );
 
