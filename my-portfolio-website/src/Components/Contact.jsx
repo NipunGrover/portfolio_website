@@ -1,6 +1,7 @@
 import {useState} from "react";
 import Container from 'react-bootstrap/Container';
 import contactImg from '../assets/images/contact-img.svg';
+import {Row, Col} from 'react-bootstrap';
 
 export const Contact = () => { 
     const formInitialDetails = {
@@ -26,6 +27,34 @@ export const Contact = () => {
         })
     }
 
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        setButtonText('Sending...');
+        let response = await fetch("http://localhost:5000/contact", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json;charset=utf-8",
+            },
+            body: JSON.stringify(formDetails),
+        });
+        setButtonText("Send");
+        let result = response.json();
+        setFormDetails(formInitialDetails);
+        if (result.code === 200){
+            setStatus({
+                sucess: true,
+                message: "Message Sent"
+            });
+            setStatus({
+                success: false, 
+                message: "Message Failed to send, Please Try Again"
+            });
+
+        }
+
+    }
+
     return (
         <section className="contact" id="connect">
             <Container>
@@ -35,11 +64,11 @@ export const Contact = () => {
                     </Col>
                     <Col md={6}>
                         <h2>Get In Touch</h2>
-                        <form>
+                        <form onSubmit={handleSubmit}>
                             <Row>
                                 <Col sm={6} className="px-1">
                                     <input type="text" value={formDetails.name} placeholder="Name" 
-                                    onChange={(e) => onFormUpdate('Name', e.target.value)}/>
+                                    onChange={(e) => onFormUpdate('name', e.target.value)}/>
                                 </Col>
                                 <Col sm={6} className="px-1">
                                     <input type="email" value={formDetails.email} placeholder="Email Address" 
