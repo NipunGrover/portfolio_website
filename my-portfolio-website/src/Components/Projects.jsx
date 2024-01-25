@@ -42,6 +42,7 @@ export const Projects = () => {
             <Container>
                 <Row>
                     <Col>
+                    {/* <img classname="background-image-right" src={ColorSharp2}></img> */}
                         <Tab.Container defaultActiveKey="first">
                             <Nav variant="pills">
                                 <Nav.Item id="projects-tabs-tab-first">
@@ -81,10 +82,13 @@ export const Projects = () => {
                                 </Tab.Pane>
                             </Tab.Content>
                         </Tab.Container>
+                        
                     </Col>
+                    
                 </Row>
+           
             </Container>
-            <img classame="background-image-right" src={ColorSharp2}></img>
+          
         </section>
       );
 

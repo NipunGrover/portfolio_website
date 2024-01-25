@@ -34,6 +34,8 @@ body {
   background-color: #121212 !important;
   color: #fff !important;
   font-family: 'Centra', sans-serif !important;
+  padding-left: 15px !important;
+  zoom: 108% !important;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -167,6 +169,7 @@ span.navbar-text {
 	position: relative;
 	background-color: transparent;
 	transition: 0.3s ease-in-out;
+  border-radius: 20px;
 }
 .navbar-text button span {
   z-index: 1;
@@ -181,6 +184,7 @@ span.navbar-text {
   top: 0;
   z-index: -1;
   transition: 0.3s ease-in-out;
+  border-radius: 20px;
 }
 .navbar-text button:hover {
   color: #121212;
@@ -575,7 +579,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /************ Footer Css ************/
 .footer {
   padding: 0 0 50px 0;
-  background-image: url('./assets/img/footer-bg.png');
+  background-image: url('./assets/images/footer-bg.png');
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -649,6 +653,14 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   color: #B8B8B8;
   letter-spacing: 0.5px;
   margin-top: 20px;
+  text-align: center;
 }
 
 
+
+/************ Misc ************/
+
+.heart {
+  color: red;
+  font-size: 1.5em;
+}

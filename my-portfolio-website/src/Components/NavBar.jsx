@@ -48,7 +48,7 @@ useEffect(() => {
           <Nav className="me-auto">
             <Nav.Link href="#home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'}>Home</Nav.Link>
             <Nav.Link href="#skills"  className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'}>Skills</Nav.Link>
-            <Nav.Link href="#projects"  className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'}>Projects</Nav.Link>
+            <Nav.Link href="#project"  className={activeLink === 'project' ? 'active navbar-link' : 'navbar-link'}>Projects</Nav.Link>
           </Nav>
           <span className="navbar-text">
           {/*this is where all the social media icons will be */}
@@ -58,9 +58,11 @@ useEffect(() => {
               <a href="#"><img src={navIcon3}/></a>
             </div>
             {/*console log is just to be replaced later on for actual navigation to the contact form on our application*/}
-            <button className="vvd" onClick={() => console.log('connect')}>
-              <span>Let's Connect</span>
-            </button>
+            <a href="#connect">
+              <button className="vvd">
+                <span>Let's Connect</span>
+              </button>
+            </a>
           </span>
         </Navbar.Collapse>
       </Container>
