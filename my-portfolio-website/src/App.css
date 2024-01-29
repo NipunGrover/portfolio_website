@@ -664,3 +664,20 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   color: red;
   font-size: 1.5em;
 }
+
+.white-logo {
+  filter: brightness(0) invert(1);
+}
+
+
+/*this css is to set align the text with the logos in the skills section carousel*/
+.item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%; 
+}
+
+.item h5 {
+  margin-top: auto;
+}
