@@ -3,6 +3,7 @@ import {Container, Row, Col} from 'react-bootstrap';
 import headerImg from "../assets/images/banner.svg";
 import {useState, useEffect} from 'react';
 
+
 export const Banner = () => {
     //these are the words displayed on the banner
     const toRotate = ["Software Developer", "Web Developer", "OOP Programmer"]

@@ -80,7 +80,10 @@ export const Skills = () => {
                                 Skills
                             </h2>
                             <p>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br></br> Lorem Ipsum has been the industry's standard dummy text.
+                            Versatile software developer with a strong foundation in C# and hands-on experience in JavaScript, 
+                            React, ASP.NET, WPF, XAML, C, C++, SQL, and HTML/CSS. Proficient in database management 
+                            and Azure cloud services. Striving for crafting efficient and scalable solutions with a keen eye for 
+                            UI/UX design.
                             </p>
                             <div ref={wrapperRef}> 
                             <Carousel ref={carouselRef} responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
