@@ -65,8 +65,8 @@ export const Banner = () => {
                 <Row className="align-items-center">
                     <Col xs={12} md={6} xl={7}>
                         <span className="tagline">Welcome to my Portfolio</span>
-                        <h1>Hi, I'm Nipun, {loopNum === 2 ? 'an' : 'a'}<span className="wrap" style={{minWidth: '500px', display: 'inline-block'}}>{text}</span></h1>
-                        <p>🚀 Transforming ideas into code, one keystroke at a time</p>
+                        <h1>Hi, I'm Nipun, {loopNum === 2 ? 'an' : 'a'}<span className="wrap" style={{minWidth: '500px', display: 'inline-block', height:"1em", overflow:"hidden"}}>{text}</span></h1>
+                        <p>Just an aspiring Developer with enthusiasm to learn<br/> 🚀 Transforming ideas into code<br/>⌨ one keystroke at a time</p>
                         <a href="#connect">
                             <button onClick= {() => console.log('connect')}>Let's connect <ArrowRightCircle size={25}/>
                             </button>

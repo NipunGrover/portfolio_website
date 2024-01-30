@@ -2,12 +2,10 @@ import Nav from 'react-bootstrap/Nav';
 import {Col, Container, Row, Tab} from 'react-bootstrap';
 import { ProjectCard } from './ProjectCard';
 import ColorSharp2 from '../assets/images/Color-sharp2.png';
-import projImg1 from "../assets/images/project-img1.png";
-import projImg2 from "../assets/images/project-img2.png";
-import projImg3 from "../assets/images/project-img3.png";
 import notepadOnlineSS from "../assets/images/notepadOnlineSS.jpg";
 import stringGameSS from "../assets/images/string-game-ss.jpg";
 import shelterManagementSS from "../assets/images/shelter-management-app-ss.jpg";
+import porfolioWebsiteSS from "../assets/images/portfolio-website-ss.jpg";
 
 export const Projects = () => {
 
@@ -26,9 +24,9 @@ export const Projects = () => {
                 link: "https://www.google.com",
             },
             {
-                title: "Business Startup",
-                description: "This is a business startup website",
-                imgUrl: projImg3,
+                title: "This Portfolio Website",
+                description: "React based portfolio website. Click for more!",
+                imgUrl: porfolioWebsiteSS,
             },
         ],
         [
