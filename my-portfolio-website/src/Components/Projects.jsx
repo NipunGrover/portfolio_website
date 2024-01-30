@@ -5,21 +5,24 @@ import ColorSharp2 from '../assets/images/Color-sharp2.png';
 import projImg1 from "../assets/images/project-img1.png";
 import projImg2 from "../assets/images/project-img2.png";
 import projImg3 from "../assets/images/project-img3.png";
+import notepadOnlineSS from "../assets/images/notepadOnlineSS.jpg";
+import stringGameSS from "../assets/images/string-game-ss.jpg";
+import shelterManagementSS from "../assets/images/shelter-management-app-ss.jpg";
 
 export const Projects = () => {
 
     const  projects = [
         [
             {
-                title: "Business Startup",
-                description: "This is a business startup website",
-                imgUrl: projImg1,
+                title: "Notepad Online",
+                description: "Simple web based notepad using JS and .NET. Stores files on cloud. Click to see more details!",
+                imgUrl: notepadOnlineSS,
                 
             },
             {
-                title: "Business Startup",
-                description: "This is a business startup website",
-                imgUrl: projImg2,
+                title: "Word Search Game",
+                description: "WPF based word search game with C# backend and TCP connection. Supports multiple clients. Click to check out more details!",
+                imgUrl: stringGameSS,
                 link: "https://www.google.com",
             },
             {
@@ -30,9 +33,9 @@ export const Projects = () => {
         ],
         [
                 {
-                title: "Project 4",
-                description: "This is project 4",
-                imgUrl: projImg1,
+                title: "Shelter Management App",
+                description: "Coming soon! Click to view more details",
+                imgUrl: shelterManagementSS,
                 },
         ],
     ];

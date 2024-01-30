@@ -5,7 +5,7 @@ import {useState, useEffect} from 'react';
 
 export const Banner = () => {
     //these are the words displayed on the banner
-    const toRotate = ["Web Developer", "Designer" , "UI/UX" , "react"];
+    const toRotate = ["Software Developer", "Web Developer", "OOP Programmer"]
 
     //this is to indicate if the word is being deleted or being typed
     const [isDeleting, setIsDeleting] = useState(false);
@@ -51,7 +51,7 @@ export const Banner = () => {
         else if (isDeleting && updatedText === '') {
             setIsDeleting(false);
             setLoopNum(loopNum + 1);
-            setDelta(500);
+            setDelta(350);
         }
         
 
@@ -65,8 +65,8 @@ export const Banner = () => {
                 <Row className="align-items-center">
                     <Col xs={12} md={6} xl={7}>
                         <span className="tagline">Welcome to my Portfolio</span>
-                        <h1>{"Hi, I'm Nipun "}<span className="wrap" style={{minWidth: '500px', display: 'inline-block'}}>{text}</span></h1>
-                        <p>Lorem Ipsum its lorem ipsum a fox just what ever klasdjdlskafjs</p>
+                        <h1>Hi, I'm Nipun, {loopNum === 2 ? 'an' : 'a'}<span className="wrap" style={{minWidth: '500px', display: 'inline-block'}}>{text}</span></h1>
+                        <p>🚀 Transforming ideas into code, one keystroke at a time</p>
                         <a href="#connect">
                             <button onClick= {() => console.log('connect')}>Let's connect <ArrowRightCircle size={25}/>
                             </button>
@@ -86,6 +86,5 @@ export const Banner = () => {
 
 
     );
-
-
 }
+
