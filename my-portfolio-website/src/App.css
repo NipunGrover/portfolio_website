@@ -696,3 +696,25 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   object-fit: cover;
   border-radius: 30px;
 }
+
+
+/************ Project readme 1 ************/
+
+.interface-image {
+  width: 90%;  /* or any size you want */
+  height: auto; /* maintain aspect ratio */
+  
+}
+
+.proj1 h2
+{
+  padding-top: 120px;
+}
+
+.proj1 video
+{
+  width: 80%;
+  height: auto;
+  padding-top: 10px;
+  border-radius: 30px;
+}
