@@ -1,7 +1,6 @@
 import Nav from 'react-bootstrap/Nav';
 import {Col, Container, Row, Tab} from 'react-bootstrap';
 import { ProjectCard } from './ProjectCard';
-import ColorSharp2 from '../assets/images/Color-sharp2.png';
 import notepadOnlineSS from "../assets/images/notepadOnlineSS.jpg";
 import stringGameSS from "../assets/images/string-game-ss.jpg";
 import shelterManagementSS from "../assets/images/shelter-management-app-ss.jpg";
