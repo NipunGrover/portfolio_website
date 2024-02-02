@@ -17,7 +17,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v1
         with:
-          node-version: 20
+          node-version: '20.11.0'
 
       - name: Install dependencies
         uses: bahmutov/npm-install@v1
@@ -48,7 +48,7 @@ jobs:
           path: my-portfolio-website/dist
 
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+        uses: JamesIves/github-pages-deploy-action@4.1.5
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: my-portfolio-website/dist
+          branch: gh-pages  # the branch where your site will be deployed
+          folder: my-portfolio-website/dist  # the folder with your built site
