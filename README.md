@@ -17,11 +17,4 @@ This is my personal portfolio website, showcasing my skills, projects, and exper
 
 **You can access the project at https://nipungrover.github.io**
 
-## Future Improvements
 
-- Add a blog section to share my thoughts on technology and programming.
-- Implement a dark mode toggle for accessibility.
-
-## Contact
-
-If you have any questions or comments, feel free to reach out to me at [your-email@example.com](mailto:your-email@example.com).
